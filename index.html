@@ -1,0 +1,493 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mercy Ships Project</title>
+    <!-- VIDEO JS -->
+    <link rel="stylesheet" href="/css/video-js.css"/>
+    <script src="//vjs.zencdn.net/7.3.0/video.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script src="https://kit.fontawesome.com/34cc20a679.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        
+        <!-- NAVBAR + JUMBOTRON -->
+        <header>
+
+            <nav>
+                <!-- LOGO LINK -->
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/1_header/MSlogo.png" alt="Mercy Ships logo">
+                    </a>
+                </div>
+
+                <!-- NAVIGATION LINKS -->
+                <div class="navigation">
+                    
+                    <!-- Language Nav -->
+                    <ul class="secondary-nav">
+                        <li>
+                            <a href="#">FR</a>
+                        </li>
+                        <li>
+                            <a href="#">NL</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Main Nav -->
+                    <ul class="main-nav">
+                        <li>
+                            <a href="#">Ways to give</a>
+                        </li>
+                        <li>
+                            <a href="#">How to be involved</a>
+                        </li>
+                        <li>
+                            <a href="#">Success stories</a>
+                        </li>
+                        <li>
+                            <a href="#">Who we are</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                
+                <!-- DONATE BUTTON -->
+                <div class="btn-donate">
+                        <button>DONATE &#9660</button>
+                </div>
+
+            </nav>
+
+            <!-- JUMBOTRON SLIDES -->
+            <div class="slides-container">
+                <div class="slides">
+
+                    <div class="donate">
+                        <div class="donate-txt">
+                            <h2>Donate & Help</h2>
+                            <p>5 billion people on the face of the earth lack access to 
+                            safe, secure and effective surgery. Help us reach more people 
+                            with your donation.</p>
+                        </div>
+                        <div class="give-monthly">
+                            <h2>Give Monthly</h2>
+                            <p>CHF 30.-Can help provide an eye exam for one patient.</p>
+                            <form action="#">
+                                <input id="gmon" type="text" name="amount-monthly" value="CHF 30.-">
+                                <label for="gmon" class="static-value">Month</label>
+                                <br>
+                                <button class="credit-btn gm-btn" type="submit">
+                                    <img src="img/1_header/donate_card_icon.png">Credit/Debit Card
+                                </button>
+                                <button class="bills-btn gm-btn" type="submit">
+                                    <img src="img/1_header/donate_bills_icon.png">Bills        
+                                </button>
+                            </form>
+                        </div>
+                        <div class="give-once">
+                            <h2>Give Once</h2>
+                            <p>CHF 80.-Can help provide quantity dental care to a
+                            young African child.</p>
+                            <input id="gone" type="text" name="amount-once" value="CHF 80.-">
+                            <label for="gone" class="static-value">Month</label>
+                            <br>
+                            <button class="credit-btn go-btn" type="submit">
+                                <img src="img/1_header/donate_card_icon.png">Credit/Debit Card</button>
+                            <button class="bills-btn go-btn" type="submit">
+                                <img src="img/1_header/donate_bills_icon.png">Bills
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="campaign">
+                        <div class="campaign-txt">
+                            <h4>Latest campaign</h4>
+                            <h1>Help us to provide more surgery</h1>
+                            <p>This is Photoshop's version of Lorem Ipsum.
+                            Proin gravida nibh vel velit auctor Aenean sollicitudin,
+                            lorem quis bibendum.
+                            </p>
+                            <a href="#">Learn more</a>
+                        </div>
+                        <div class="current-campaign">
+                            <div> 
+                                <a href="#">
+                                    <img src="img/1_header/campaign_fb_icon.png" alt="facebook">
+                                </a>
+                                <a href="#">
+                                    <img src="img/1_header/campaign_twitter_icon.png" alt="twitter">
+                                </a>
+                                <a href="#">
+                                    <img src="img/1_header/campaign_google_icon.png" alt="google plus">
+                                </a>
+                                <a href="#">
+                                    <img src="img/1_header/campaign_in_icon.png" alt="linked in">
+                                </a>
+                            </div>
+                        </div>>
+                    </div>
+
+                    <div class="ship">
+                        <div class="ship-txt">
+                            <h1>African Mercy in Benin now</h1>
+                            <p>This is Photoshop's version of Lorem Ipsum.
+                            Proin gravida nibh vel velit auctor Aenean sollicitudin,
+                            lorem quis bibendum.
+                            </p>
+                            <a href="#">Check it out</a>
+                        </div>        
+                    </div>
+
+                    <div class="vanya">
+                        <video id="my-player" class="video-js vjs-default-skin vjs-big-play-centered" poster="/img/1_header/videoBG.png" controls data-setup="{}" preload="auto">
+                            <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
+                        </video>
+                        <div class="vanya-txt">
+                            <h1>Vanya</h1>
+                            <p>This is Photoshop's version of Lorem Ipsum.
+                            Proin gravida nibh vel velit auctor Aenean sollicitudin,
+                            lorem quis bibendum.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bringing-hope">
+                        <div class="hope-txt">
+                            <h1>Bringing hope and healing the world's poor</h1>
+                            <p>This is Photoshop's version of Lorem Ipsum.
+                            Proin gravida nibh vel velit auctor Aenean sollicitudin,
+                            lorem quis bibendum.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>        
+                    </div>
+                </div>
+            </div>   
+        </header>
+
+        <!-- WHAT IS IT SECTION -->
+        <div class="what-is">
+            <div class="what-is-1">
+                <img class="what-img" src="/img/2_what_is_it/what_is_it_left_1.png" alt="ship">
+            </div>
+            <div class="what-is-2">
+                <img class="what-img" src="/img/2_what_is_it/what_is_it_mid_1.png" alt="surgery">
+            </div>
+            <div class="what-is-3">
+                <img class="what-img" src="/img/2_what_is_it/what_is_it_right_2.png" alt="child">
+            </div>
+            <div class="what-is-logo">
+                <img src="/img/2_what_is_it/MSlogo_color.png" alt="MSlogo">
+            </div>
+            <div class="what-is-txt-btn">
+                <p>
+                    This is Photoshop's version of Lorem Ipsum. I have no idea what I'm doing.
+                    This is Photoshop's version of Lorem Ipsum. I have no idea what I'm doing.
+                    This is Photoshop's version of Lorem Ipsum. I have no idea what I'm doing.
+                    This is Photoshop's version of Lorem Ipsum. I have no idea what I'm doing.
+                    This is Photoshop's version of Lorem Ipsum. I have no idea what I'm doing.
+                </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <!-- STORIES SECTION -->
+        <div class="stories">
+            <h1>Latest life changes stories</h1>
+            <div class="stories-collage">
+                <img src="/img/3_stories/stories_1.png" alt="African Child">
+                <img src="/img/3_stories/stories_2.png" alt="African Lady">
+                <img src="/img/3_stories/stories_3.png" alt="African Child">
+                <img src="/img/3_stories/stories_4.png" alt="African Teen">
+                <img src="/img/3_stories/stories_5.png" alt="Grandma and doctor">
+                <img src="/img/3_stories/stories_6.png" alt="African Teen">
+            </div>
+        </div>        
+
+        <!-- JOIN BANNER -->
+        <div class="join-banner .clearfix">
+            <p>Help out by joining us as volonteer.</p>
+            <a href="#">BECOME A VOLONTEER</a>
+            
+        </div>
+
+        <!-- DONATE 2 SECTION -->
+        <div class="dono2">
+            <h1>Change lives now</h1>
+            <div class="give-monthly">
+                <h2>Give Monthly</h2>
+                <p>CHF 30.-Can help provide an eye exam for one patient.</p>
+                <form action="#">
+                    <input id="gmon" type="text" name="amount-monthly" value="CHF 30.-">
+                    <label for="gmon" class="static-value">Month</label>
+                    <br>
+                    <button class="credit-btn gm-btn" type="submit">
+                        <img src="img/1_header/donate_card_icon.png">Credit/Debit Card
+                    </button>
+                    <button class="bills-btn gm-btn" type="submit">
+                        <img src="img/1_header/donate_bills_icon.png">Bills        
+                    </button>
+                </form>
+            </div>
+            <div class="give-once">
+                <h2>Give Once</h2>
+                <p>CHF 80.-Can help provide quantity dental care to a
+                young African child.</p>
+                <input id="gone" type="text" name="amount-once" value="CHF 80.-">
+                <label for="gone" class="static-value">Month</label>
+                <br>
+                <button class="credit-btn go-btn" type="submit">
+                    <img src="img/1_header/donate_card_icon.png">Credit/Debit Card</button>
+                <button class="bills-btn go-btn" type="submit">
+                    <img src="img/1_header/donate_bills_icon.png">Bills
+                </button>
+            </div>
+        </div>
+
+        <!-- AFM section -->
+        <div class="afm">
+            <img src="/img/5_AFM/AFM_mapBG.png" alt="Map of Africa">
+            <div class="afm-txt-btn">
+                <h1>Where we went so far</h1>
+                <p>This is Photoshop's version of Lorem Ipsum ipsum
+                lorem i have no idea lorem ipsum lorem ipsum lorem.
+                This is Photoshop's version of Lorem Ipsum ipsum
+                lorem i have no idea lorem ipsum lorem ipsum lorem.
+                </p>
+                <a href="#">VIEW OUR MAPS</a>
+            </div>
+        </div>
+
+        <!-- METRICS section -->
+        <div class="metrics">
+            <div class="metrics-sub metrics-left">
+                <h2>1 Million</h2>
+                <p>People helped with surgeries
+                so far</p>
+                <a href="#">STORIES</a>
+            </div>
+
+            <div class="metrics-sub">
+                <h2>5 Billion</h2>
+                <p>People don't have access to safe
+                secure surgery</p>
+                <a href="#">DONATE</a>
+            </div>
+
+            <div class="metrics-sub metrics-right">
+                <h2>500'000</h2>
+                <p>Volonteers offer their time and
+                effort so far</p>
+                <a href="#">JOIN NOW</a>
+            </div>
+        </div>
+
+        <!-- BECOME A VOLONTEER section -->
+        <div class="become">
+            <div class="become-txt">
+                <h1>How to become a volonteer</h1>
+                <p>Help us saving more lives</p>
+                <a href="#">JOIN NOW</a>
+            </div>
+        </div>
+        <!-- become extension -->
+        <div class="vol123">
+            <div class="vol vol-left">
+                <p><b>Check the open opportunities</b><br>
+                By joining now</p>
+            </div>
+            <div class="vol">
+                <p><b>Apply now</b><br>
+                Fill up the form and we will
+                get back to you</p>
+            </div>
+            <div class="vol vol-right">
+                <p><b>Come on board</b><br>
+                Be apart of crew on the africa Mercy</p>
+            </div>
+        </div>
+            
+        <!-- LAST ARTICLES section -->
+        <div class="last-articles">
+                <h1>Last articles</h1>
+                <div class="articles-wrapper">
+
+                    <div class="separate-article">
+                        <img src="/img/7_last articles/last_articles.png" alt="circular photo">
+                        <div class="articles-txt">
+                            <p class="date">29.08.16</p>
+                            <h2>New crew members</h2>
+                            <p>Lorem ipsum kica i 700, voo noo
+                            i to, lorem mofokin ipsum all day
+                            everyday, dolla dolla bills yo.
+                            Lorem mofokin ipsum all day
+                            everyday, dolla dolla bills yo.</p>
+                            <a href="#">Read more</a>
+                            <p class="signed">Signed by Rene</p>
+                        </div>
+                    </div>
+                    
+                    <div class="separate-article">
+                        <img src="/img/7_last articles/last_articles.png" alt="circular photo">
+                        <div class="articles-txt">
+                            <p class="date">30.08.16</p>
+                            <h2>New press release</h2>
+                            <p>Lorem ipsum kica i 700, voo noo
+                            i to, lorem mofokin ipsum all day
+                            everyday, dolla dolla bills yo.
+                            Lorem mofokin ipsum all day
+                            everyday, dolla dolla bills yo.</p>
+                            <a href="#">Read more</a>
+                            <p class="signed">Signed by Bryce</p>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+        <!-- ENDORSMENT section -->
+        <div class="endorsment">
+                <div class="endorsment-wrapper">
+                    <img src="/img/8_endrosements/mandela.png" alt="Nelson Mandela">
+                    <p>
+                    "I applaud Mercy Ships in their efforts of transformational development
+                    as they make a lasting difference in a world of need. Mercy Ships has commited
+                    themselves to the vision of an african renaissance in their vision of bringing
+                    hope and healing to the continent of Africa. I salute the vision and mission
+                    of Mercy Ships and ask that you join me in supporting their noble work and
+                    contribute to make this world a better place."
+                    </p>
+                    <h3>Nelson Mandela - Former President, South Africa</h3>
+                </div>
+        </div>
+            
+        <!-- PARTNERS section -->
+        <div class="partners">
+            <h1>Our partners</h1>
+            <div class="partner-logos">
+                <img src="/img/9_partners/aligro.png" alt="aligro">
+                <img src="/img/9_partners/alpiq.png" alt="alpiq">
+                <img src="/img/9_partners/BRS.png" alt="BRS">
+                <img src="/img/9_partners/centeractive.png" alt="centeractive">
+                <img src="/img/9_partners/retrospective.png" alt="retrospective">
+                <img src="/img/9_partners/lausanne.png" alt="lausanne">
+            </div>
+        </div>
+
+
+            
+        <!-- FOOTER section -->
+        <div class="footer">
+            <div class="footer-form">
+                <h1>Call us now: <br>+41 21 654 32 10</h1>
+                <p>Subsrcibe to our newsletter:</p>
+                <form class="sub-form clearfix" action="/action_page.php">
+                
+                    <div class="form-email">
+                        <input type="email" id="email" name="email" placeholder="Email Address">
+                        <i class="far fa-envelope fa-lg"></i>
+                    </div>
+                    
+                    <input type="text" id="fname" name="fname" placeholder="First Name">
+                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+                            
+                    <div class="form-countries clearfix">
+                        <i class="fas fa-globe-americas fa-lg"></i>
+                        <input list="countries" id="country-choice" name="country-choice" placeholder="Your country" />
+                            <datalist id="countries">
+                                <option value="US"></option>
+                                <option value="UK"></option>
+                                <option value="Canada"></option>
+                                <option value="Serbia"></option>
+                                <option value="China"></option>
+                                <option value="Russia"></option>
+                            </datalist>
+                        <button type="submit" id="submit" name="Subscribe">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Suisse romande</h3>
+                <p>
+                Chemin de la Fauvette 98,<br>
+                CH-1012 Lausanne<br>
+                Tel +41 21 654 32 10<br>
+                </p>
+                <a href="mailto:Lausanne@mercyships.ch">Lausanne@mercyships.ch</a>
+
+                <h3>Deutschschweiz</h3>
+                <p>
+                Lehnweg 1<br>
+                CH-3123 Belp<br>
+                Tel +41 31 812 40 31<br>
+                </p>
+                <a href="mailto:Belp@mercyships.ch">Belp@mercyships.ch</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">General FAQs</a></li>
+                    <li><a href="#">Mercy Minute</a></li>
+                    <li><a href="#">myMercy</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Donors</a></li>
+                    <li><a href="#">International</a></li>
+                    <li><a href="#">Press Room</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul >
+            </div>
+
+            <div class="footer-social">
+                <a href="#"> <img src="/img/10_footer/Facebook.png" alt="facebook"> </a>
+                <a href="#"> <img src="/img/10_footer/twitter.png" alt="twitter"> </a>
+                <a href="#"> <img src="/img/10_footer/Google +.png" alt="google-plus"> </a>
+                <a href="#"> <img src="/img/10_footer/in.png" alt="linked-in"> </a>
+                <p>Share our need</p>
+            </div>
+
+            <div class="subfooter">
+                <p>Copyright @ 2020 Mercy Ships Switzerland</p>
+                <a class="t-and-c" href="#">Our terms & conditions</a>
+                <p class="designed">Designed by <a href="#">KP</a> / Dev. by <a href="#">DjV</a></p>
+            </div>
+        </div>
+                
+        <!-- SUBFOOTER -->
+        
+                
+                
+            
+
+    </div>
+   
+
+
+    <!-- JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script>
+        $('.slides').slick({
+            autoplay: false,
+            autoplaySpeed: 5000,
+            arrows: false,
+            dots: true
+        });
+    </script>
+</body>
+</html>

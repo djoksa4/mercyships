@@ -1,0 +1,1110 @@
+
+body {
+    text-align: center;
+}
+
+
+.container {
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* NAV plus JUMBOTRON SLIDES */
+header {
+    display: grid;
+    grid-template-columns: 14% auto 14%;
+    grid-template-rows: 14% auto;
+    max-height: 750px;
+}
+
+/* C TRU NAV BAR */
+nav {
+    background-color: transparent;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* NAVIGATION LINKS */
+.main-nav {
+    margin-bottom: 16px;
+    padding-inline-start: 0px;
+    display: flex;
+    justify-content: center;
+}
+.secondary-nav {
+    text-align: right;
+    padding-inline-start: 0px;
+    padding-right: 50px;
+}
+.secondary-nav li {
+    display: inline-block;
+    padding: 0 5px;
+}
+.main-nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.main-nav li:first-child {
+    padding-left: 50px;
+}
+.main-nav li:last-child {
+    padding-right: 50px;
+}
+.secondary-nav li a {
+    color: white;
+    opacity: 75%;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+}
+.main-nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+}
+
+/* DONATE BUTTON */
+.btn-donate {
+    margin-bottom: 19px;
+}
+.btn-donate button {
+    width: 164px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #e68a00;
+    border: none;
+    border-radius: 3%;
+    cursor: pointer;
+}
+.btn-donate button:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.80);
+}
+
+/* SLIDES AND FEATURES */
+.slides-container {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    overflow: hidden;
+}
+.donate,
+.campaign,
+.ship,
+.vanya,
+.bringing-hope {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1600px;
+    height: 750px;
+}
+
+/* DONATION SLIDE */
+.donate {
+    background-image: url("../img/1_header/donateBG.png");
+    position: relative;
+}
+.donate-txt {
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.5;
+    left: 14%;
+    right: 40%;
+    top: 20%;
+}
+/* Donation Cards */
+.give-monthly,
+.give-once {
+    background-color: rgb(252, 252, 240);
+    color: black;
+    position: absolute;
+    display: inline-block;
+    max-width: 320px;
+    height: 280px;
+    bottom: 10%;
+    border-radius: 1%;
+    padding: 0 25px 35px;
+    box-shadow: 0px 5px 7px -2px rgba(0, 0, 0, 0.4);
+}
+.give-once {
+    left: 40%;
+}
+.give-monthly {
+    left: 14%;
+}  
+.give-once h2,
+.give-monthly h2 {
+    font-size: 35px;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    line-height: 0.488;
+}
+.give-once h2 {
+  color: rgb(103, 170, 18);
+}
+.give-monthly h2 {
+    color: rgb(56, 179, 186);
+}
+.give-monthly p,
+.give-once p {
+    font-size: 18px;
+    font-family: "Roboto";
+    line-height: 1.389;
+}
+input#gmon,
+input#gone {
+    font-size: 25px;
+    font-family: "Roboto";
+    line-height: 1.2;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 2px solid lightgray;
+    border-radius: 2px;
+    position: relative;
+}
+input#gmon {
+    color: rgb(35, 183, 192);
+}
+input#gone {
+    color: rgb(112, 199, 1);
+}
+.static-value {
+    position: absolute;
+    font-size: 25px;
+    font-family: "Roboto";
+    line-height: 1.2;
+    right: 12%;
+    bottom: 41%
+}
+.gm-btn,
+.go-btn {
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto";
+    line-height: 1.389;
+    padding: 12px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.gm-btn:hover,
+.go-btn:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.80);
+}
+.gm-btn {
+    background-color: rgb(35, 183, 192);
+}
+.go-btn {
+    background-color: rgb(112, 199, 1);
+}
+
+.credit-btn {
+    display: inline-block;
+    position: absolute;
+    left: 8%;
+}
+.bills-btn {
+    display: inline-block;
+    position: absolute;
+    right: 8%;
+}
+.credit-btn img {
+    float: left;
+    padding-top: 4px;
+    margin-right: 5px;
+}
+.bills-btn img {
+    float: left;
+    padding-top: 0px;
+    margin-right: 6px;
+}
+
+/* CAMPAIGN SLIDE */
+.campaign {
+    background-image: url("../img/1_header/campaignBG.png");
+    position: relative;
+}
+/* Campaign Text + Button */
+.campaign-txt {
+    position: absolute;
+    left: 14%;
+    top: 50%;
+    text-align: left;
+    color: white;
+    max-width: 35%;
+}
+.campaign-txt h4 {
+    font-size: 18px;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    line-height: 1.056;
+}
+.campaign-txt h1,
+.ship-txt h1,
+.vanya-txt h1,
+.hope-txt h1 {
+    font-size: 35px;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    line-height: 0.543;
+}
+.campaign-txt p,
+.ship-txt p,
+.vanya-txt p
+.hope-txt p {
+    font-size: 15px;
+    font-family: "Roboto Slab";
+    line-height: 1.267;
+    font-weight: lighter;
+}
+.campaign-txt a,
+.ship-txt a,
+.hope-txt a {
+    font-size: 18px;
+    font-family: "Roboto";
+    line-height: 1.056;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    display: inline-block;
+    border: 2px solid #e68a00;
+    border-radius: 5px;
+    padding: 23px 40px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.campaign-txt a:hover,
+.ship-txt a:hover,
+.hope-txt a:hover {
+    background-color: #e68a00;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.80);
+}
+/* Vertical Banner */
+.current-campaign {
+    background-image: url("/img/1_header/campaign_current_campaign.png");
+    position: absolute;
+    height: 750px;
+    width: 250px;
+    right: 11.3%
+}
+.current-campaign div {
+    position: absolute;
+    bottom: 6%;
+    left: 14%;
+}
+.current-campaign div a {
+    display: inline-block;
+    margin: 5px;
+    border: 2px solid darkgrey;
+    padding: 8px 5px 1px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.current-campaign div a img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* SHIP (LEFT) SLIDE (some of the classes reused from the campaign slide) */
+.ship {
+    background-image: url("../img/1_header/standard_leftBG.png");
+    position: relative;
+}
+.ship-txt {
+    position: absolute;
+    right: 14%;
+    bottom: 13%;
+    text-align: right;
+    color: white;
+    max-width: 35%;
+}
+
+/* VIDEO VANYA SLIDE (some of the classes reused from the campaign slide)*/
+.vanya {
+    position: relative;
+} 
+#my-player {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.vanya-txt {
+    position: absolute;
+    z-index: 1;
+    left: 14%;
+    top: 40%;
+    text-align: left;
+    color: white;
+    max-width: 19%;
+}
+
+/* BRINGING HOPE (RIGHT) SLIDE */
+.bringing-hope {
+    background-image: url("../img/1_header/standard_rightBG.png");
+    position: relative;
+}
+.hope-txt {
+    position: absolute;
+    left: 14%;
+    bottom: 17%;
+    text-align: left;
+    color: white;
+    max-width: 70%;
+}
+
+/* SLICK CUSTOMIZATION */
+.slick-dots
+{ 
+    bottom: 30px;
+}
+.slick-dots li.slick-active button:before {
+    color: white;
+}
+.slick-dots li button:before
+{
+    font-size: 12px;
+    color: white;
+}
+
+
+
+/* WHAT IS IT SECTION */
+.what-is {
+    padding: 200px 14%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 100px;
+}
+.what-is-txt-btn {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.what-img {
+    border-radius: 5%;
+}
+.what-is-txt-btn p {
+    font-size: 23px;
+    font-family: "Roboto";
+    color: rgb(51, 51, 51);
+    line-height: 1.793;
+    text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.what-is-txt-btn a {
+    font-size: 15px;
+    font-family: "Roboto";
+    line-height: 1.056;
+    text-decoration: none;
+    color: rgb(125, 183, 51);
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.2;
+    display: inline-block;
+    border: 3px solid rgb(125, 183, 51);
+    border-radius: 5px;
+    padding: 17px 32px;
+    margin-top: 40px;
+    float: left;
+}
+.what-is-txt-btn a:hover {
+    color: white;
+    background-color: rgb(125, 183, 51);
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.80);
+}
+
+/* STORIES SECTION */
+.stories h1 {
+    font-size: 60px;
+    font-family: "RobotoSlab";
+    color: rgb(1, 191, 253);
+    line-height: 0.38;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.stories-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0;
+}
+.stories-collage img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* JOIN BANNER */
+.join-banner {
+    background-color: rgb(125, 183, 51);
+    height: 120px;
+}
+.join-banner p {
+    display: inline-block;
+    font-size: 35px;
+    font-family: "RobotoSlab";
+    line-height: 0.303;
+    color: white;
+    margin-left: 14%;
+    float: left;
+    margin-top: 56px;
+}
+.join-banner a {
+    display: inline-block;
+    font-size: 15px;
+    font-family: "Roboto";
+    line-height: 1.056;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.2;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 17px 32px;
+    margin-right: 14%;
+    margin-top: 32px;
+    float: right;
+}
+.join-banner a:hover {
+    color: rgb(125, 183, 51);
+    background-color: white;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.80);
+}
+
+/* CLEARFIX */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*  DONATE 2 SECTION */
+.dono2 {
+    height: 750px;
+    background-image: url(/img/4_donate/donateBG_1.png);
+    position: relative;
+
+}
+.dono2 h1 {
+    color: white;
+    font-size: 50px;
+    font-family: "RobotoSlab";
+    top: 20%;
+    position: absolute;
+    left: 38%;
+}
+
+/* AFM section */
+.afm {
+    margin-top: 150px;
+    position: relative;
+    height: 800px;
+}
+.afm img {
+    float: right;
+    position: absolute;
+    right: 10%;   
+}
+.afm-txt-btn {
+    width: 40%;
+    position: absolute;
+    left: 14%;
+    top: 350px;
+}
+.afm-txt-btn p {
+    font-size: 22px;
+    font-family: "Roboto";
+    color: rgb(51, 51, 51);
+    line-height: 1.591;
+    text-align: left;
+}
+.afm-txt-btn h1 {
+    font-size: 21.639px;
+    font-family: "RobotoSlab";
+    color: rgb(1, 191, 253);
+    line-height: 1.122;
+    text-align: left;
+}
+.afm-txt-btn a {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(1, 191, 253);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    text-decoration: none;
+    border: 3px solid rgb(1, 191, 253);
+    border-radius: 5px;
+    padding: 17px 32px;
+    position: absolute;
+    left: 0;
+}
+.afm-txt-btn a:hover {
+    background-color: rgb(1, 191, 253);
+    color: white;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.80);
+}
+
+/* METRICS section */
+.metrics {
+    margin-top: 150px;
+    position: relative;
+}
+.metrics-sub {
+    display: inline-block;
+    display: absolute;
+    width: 20%;
+}
+.metrics-sub h2 {
+    font-size: 60px;
+    font-family: "RobotoSlab";
+    color: rgb(102, 102, 102);
+    line-height: 0.284;
+}
+.metrics-sub p {
+    font-size: 28px;
+    font-family: "Roboto";
+    color: rgb(1, 191, 253);
+    line-height: 1.25;
+}
+.metrics-sub a {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.2;
+    display: inline-block;
+    border: 3px solid rgb(1, 191, 253);
+    border-radius: 5px;
+    padding: 17px 32px;
+}
+.metrics-sub a:hover {
+    background-color: rgb(1, 191, 253);
+    color: white;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.80);
+}
+.metrics-left {
+   position: absolute;
+   left: 14%;
+}
+.metrics-right {
+    position: absolute;
+    right: 14%;
+}
+
+
+/* BECOME A VOLONTEER section */
+.become {
+    background-image: url("/img/6_how-to-become-meet-volunteers/how_to_becomeBG.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 950px;
+    margin-top: 200px;
+    position: relative;
+}
+.become-txt {
+    position: absolute;
+    width: 28%;
+    right: 14%;
+    bottom: 25%;
+}
+.become-txt h1 {
+    font-size: 64px;
+    font-family: "RobotoSlab";
+    color: white;
+    line-height: 0.938;
+    text-align: center;        
+}
+.become-txt p {
+    font-size: 22px;
+    font-family: "Roboto";
+    color: white;
+    line-height: 1.591;
+    text-align: center;
+}
+.become-txt a {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.2;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 17px 32px;    
+}
+.become-txt a:hover {
+    background-color: white;
+    color: black;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.80);
+    font-weight: 600;
+}
+/* become extension */
+.vol123 {
+    position: relative;
+}
+.vol {
+    display: inline-block;
+    display: absolute;
+    width: 18%;
+    font-size: 30px;
+    font-family: "Roboto";
+    color: rgb(51, 51, 51);
+    line-height: 1.167;
+    text-align: center;
+}
+.vol-left {
+    position: absolute;
+    left: 17%;
+}
+.vol-right {
+    position: absolute;
+    right: 17%;
+}
+
+/* LAST ARTICLES section */
+.last-articles {
+    background-color: #ebe9e9e3;
+    padding: 50px 14% 100px;
+    margin-top: 150px;
+}
+.last-articles h1 {
+    text-align: left;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: "Roboto Slab";
+    color: rgb(1, 191, 253);
+    line-height: 1.122;
+}
+.articles-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.separate-article {
+    display: flex;
+    width: 45%;
+}
+.articles-wrapper img {
+    object-fit: contain;
+    align-self: flex-start;
+    margin-right: 30px;
+    padding-top: 45px;
+}
+.articles-txt {
+    text-align: left;
+}
+.date {
+    font-size: 20px;
+    font-family: "Roboto";
+    color: rgb(32, 32, 90);
+    font-weight: bold;
+    line-height: 1.75;
+}
+.articles-txt h2 {
+    font-size: 30px;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    line-height: 0;
+}
+.articles-txt p {
+    font-size: 20px;
+    font-family: "Roboto";
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+.articles-txt a {
+    font-size: 20px;
+    font-family: "Roboto";
+    letter-spacing: 1px;
+    color: rgb(1, 191, 253);
+    text-decoration: none;
+    line-height: 2;
+}
+.signed {
+    font-size: 20px;
+    font-family: "Roboto";
+    color: rgb(51, 51, 51);
+    line-height: 0.757;
+}
+
+/* ENDORSMENT section */
+.endorsment-wrapper {
+    width: 40%;
+    margin: 100px auto;
+}
+.endorsment-wrapper p {
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgba(51, 51, 51, 0.5);
+    font-style: italic;
+    margin-bottom: 0;
+    margin-top: 30px;
+    line-height: 1.4;
+}
+.endorsment-wrapper h3 {
+    font-size: 22px;
+    font-family: "Roboto";
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+/* PARTNERS section */
+.partners {
+    padding: 0 14% 100px;
+}
+.partners h1 {
+    font-size: 50px;
+    font-family: "Roboto Slab";
+    color: rgb(114, 208, 249);
+    line-height: 1.122;
+    text-align: left;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+.partner-logos {
+    display: flex;
+    justify-content: space-between;
+}
+.partner-logos img {
+    object-fit: scale-down;
+}
+
+/* FOOTER section */
+.footer {
+    background-image: url(/img/10_footer/footerBG.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 70px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* footer form */
+.footer-form {
+    width: 27%;
+    margin-left: 14%;
+}
+.footer-form h1 {
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: 600;
+    color: rgb(28, 32, 76);
+    line-height: 1;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.footer-form p {
+    border: none;
+    margin: 0 0;
+    padding: 0 0;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 100;
+    color: rgb(255, 254, 254);
+    line-height: 1.2;
+    text-align: left;
+}
+#email {
+    width: 100%;
+    margin-top: 15px;
+    padding-left: 13%;
+    box-sizing: border-box;
+}
+#email,
+#fname,
+#lname,
+#country-choice,
+#submit {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    
+}
+#fname {
+    float: left;
+    max-width: 49%;
+    box-sizing: border-box;
+    padding-left: 5%;
+}
+#lname {
+    float: right;
+    max-width: 49%;
+    box-sizing: border-box;
+    padding-left: 5%;
+}
+#country-choice,
+#countries {
+    float: left;
+    width: 70%;
+    max-width: 70%;
+    box-sizing: border-box;
+    padding-left: 13%;
+    padding-right: 3%;
+}
+
+#submit {
+    font-size: 18px;
+    font-family: "Roboto Slab";
+    line-height: 1.389;
+    font-weight: 100;
+    background-color: rgb(28, 32, 76);
+    color: rgb(255, 254, 254);
+    float: right;
+    height: 40px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+#submit:hover {
+    color: rgb(28, 32, 76);
+    background-color: white;
+    font-weight: 600;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.80);
+}
+.form-email {
+    position: relative;
+}
+.form-email i {
+    position: absolute;
+    left: 4%;
+    top: 39%;
+    color: gray;
+    
+}
+.form-countries {
+    position: relative;
+    
+}
+.form-countries i {
+    position: absolute;
+    left: 4%;
+    top: 62%;
+    color: gray;
+}
+/* footer contact */
+.footer-contact {
+    max-width: 20%;
+    text-align: left;
+}
+.footer-contact h3 {
+    font-size: 20px;
+    font-family: "Roboto";
+    color: rgb(28, 32, 76);
+    font-weight: bold;
+    margin: 20px 0 0;
+}
+.footer-contact p {
+    font-family: "Roboto";
+    font-size: 18px;
+    color: rgb(28, 32, 76);
+    font-weight: 400;
+    margin: 5px 0 5px;
+}
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 16px;
+    margin: 5px 0; 
+    display: inline-block
+}
+/* footer links */
+.footer-links {
+    color: white;
+    text-align: left;
+    font-size: 15px;
+    font-family: "Roboto Slab";
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 1.677;
+}
+.footer-links ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+.footer-links a:visited {
+    color: white;
+}
+.footer-links h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+/* footer social */
+.footer-social {
+    max-width: 20%;
+    padding: 20px 0;
+    margin-right: 14%;
+}
+.footer-social a {
+    color: white;
+    display: inline-block;
+    margin: 0 3px;
+    border: 2px solid white;
+    padding: 10px 8px 6px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.footer-social a img {
+    display: block;
+    margin: auto auto;
+}
+.footer-social p {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(19, 124, 163);
+    letter-spacing: 1px;
+}
+
+/* SUBFOOTER */
+.subfooter {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0 14%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 70px;
+}
+.subfooter p,
+.designed a{
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgba(255, 255, 255, 0.349);
+}
+.t-and-c {
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    padding-top: 12px;
+    text-decoration: none;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1586px) {
+    .give-once {
+        left: 45%;
+    }
+    .campaign-txt h1,
+    .ship-txt h1,
+    .vanya-txt h1,
+    .hope-txt h1 {
+        font-size: 25px;
+    }
+    .what-is {
+        grid-column-gap: 40px;
+        grid-row-gap: 50px;
+        padding: 100px 14%;
+    }
+    .what-is-txt-btn p {
+        font-size: 20px;
+    }
+    .stories-collage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .metrics {
+        margin-top: 50px;
+    }
+    .become {
+        margin-top: 150px;
+        height: 900px;
+    }
+    .metrics-sub p {
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 1430px) {
+    .become {
+        height: 800px;
+    }
+    .articles-txt h2 {
+        font-size: 25px;
+    }
+    .articles-txt p {
+        font-size: 15px;
+    }
+    #email,
+    #fname,
+    #lname,
+    #country-choice,
+    #submit {
+        width: 100%;
+        max-width: 100%;
+    }
+    .form-countries i {
+        top: 56%;
+    }
+
+    .footer-contact,
+    .footer-links {
+        padding-top: 130px;
+    }
+    .footer-social {
+        padding-top: 150px;
+    }
+    .footer-contact p {
+        font-size: 16px;
+    }
+    .footer-contact a {
+        font-size: 14px;
+    }
+    .footer-links a {
+        font-size: 12px;
+    }
+    .current-campaign {
+        right: 10.5%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .become {
+        height: 750px;
+    }
+    .articles-txt h2 {
+        font-size: 22px;
+    }
+}

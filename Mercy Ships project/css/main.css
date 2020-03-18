@@ -1,0 +1,679 @@
+
+body {
+    text-align: center;
+}
+
+
+.container {
+    max-width: 1600px;
+    margin: auto;
+    
+}
+
+/* NAV plus JUMBOTRON SLIDES */
+header {
+    display: grid;
+    grid-template-columns: 14% auto 14%;
+    grid-template-rows: 14% auto;
+    max-height: 750px;
+}
+
+/* C TRU NAV BAR */
+nav {
+    background-color: transparent;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* NAVIGATION LINKS */
+.main-nav {
+    margin-bottom: 16px;
+    padding-inline-start: 0px;
+}
+.secondary-nav {
+    text-align: right;
+    padding-inline-start: 0px;
+    padding-right: 15px;
+}
+.secondary-nav li {
+    display: inline-block;
+    padding: 0 5px;
+}
+.main-nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.secondary-nav li a {
+    color: white;
+    opacity: 75%;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+}
+.main-nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+}
+
+/* DONATE BUTTON */
+.btn-donate {
+    margin-bottom: 19px;
+}
+.btn-donate button {
+    width: 164px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #e68a00;
+    border: none;
+    border-radius: 3%;
+    cursor: pointer;
+}
+
+
+/* SLIDES AND FEATURES */
+.slides-container {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    overflow: hidden;
+}
+.donate,
+.campaign,
+.ship,
+.vanya,
+.bringing-hope {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1600px;
+    height: 750px;
+}
+
+/* DONATION SLIDE */
+.donate {
+    background-image: url("../img/1_header/donateBG.png");
+    position: relative;
+}
+.donate-txt {
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.5;
+    left: 14%;
+    right: 40%;
+    top: 20%;
+}
+/* Donation Cards */
+.give-monthly,
+.give-once {
+    background-color: rgb(252, 252, 240);
+    color: black;
+    position: absolute;
+    display: inline-block;
+    max-width: 20%;
+    bottom: 10%;
+    border-radius: 1%;
+    padding: 0 25px 35px;
+    box-shadow: 0px 5px 7px -2px rgba(0, 0, 0, 0.4);
+}
+.give-once {
+    left: 40%;
+}
+.give-monthly {
+    left: 14%;
+}  
+.give-once h2,
+.give-monthly h2 {
+    font-size: 35px;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    line-height: 0.488;
+}
+.give-once h2 {
+  color: rgb(103, 170, 18);
+}
+.give-monthly h2 {
+    color: rgb(56, 179, 186);
+}
+.give-monthly p,
+.give-once p {
+    font-size: 18px;
+    font-family: "Roboto";
+    line-height: 1.389;
+}
+input#gmon,
+input#gone {
+    font-size: 25px;
+    font-family: "Roboto";
+    line-height: 1.2;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 2px solid lightgray;
+    border-radius: 2px;
+}
+input#gmon {
+    color: rgb(35, 183, 192);
+}
+input#gone {
+    color: rgb(112, 199, 1);
+}
+.static-value {
+    position: absolute;
+    font-size: 25px;
+    font-family: "Roboto";
+    line-height: 1.2;
+    right: 12%;
+    bottom: 41%
+}
+.gm-btn,
+.go-btn {
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto";
+    line-height: 1.389;
+    padding: 12px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 2px;
+}
+.gm-btn {
+    background-color: rgb(35, 183, 192);
+}
+.go-btn {
+    background-color: rgb(112, 199, 1);
+}
+
+.credit-btn {
+    display: inline-block;
+}
+.bills-btn {
+    display: inline-block;
+}
+.credit-btn img {
+    float: left;
+    padding-top: 4px;
+    margin-right: 5px;
+}
+.bills-btn img {
+    float: left;
+    padding-top: 0px;
+    margin-right: 6px;
+}
+
+/* CAMPAIGN SLIDE */
+.campaign {
+    background-image: url("../img/1_header/campaignBG.png");
+    position: relative;
+}
+/* Campaign Text + Button */
+.campaign-txt {
+    position: absolute;
+    left: 14%;
+    top: 50%;
+    text-align: left;
+    color: white;
+    max-width: 35%;
+}
+.campaign-txt h4 {
+    font-size: 18px;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    line-height: 1.056;
+}
+.campaign-txt h1,
+.ship-txt h1,
+.vanya-txt h1,
+.hope-txt h1 {
+    font-size: 35px;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    line-height: 0.543;
+}
+.campaign-txt p,
+.ship-txt p,
+.vanya-txt p
+.hope-txt p {
+    font-size: 15px;
+    font-family: "Roboto Slab";
+    line-height: 1.267;
+    font-weight: lighter;
+}
+.campaign-txt a,
+.ship-txt a,
+.hope-txt a {
+    font-size: 18px;
+    font-family: "Roboto";
+    line-height: 1.056;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    display: inline-block;
+    border: 2px solid #e68a00;
+    border-radius: 5px;
+    padding: 23px 40px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+/* Vertical Banner */
+.current-campaign {
+    background-image: url("/img/1_header/campaign_current_campaign.png");
+    position: absolute;
+    height: 750px;
+    width: 250px;
+    right: 11.3%
+}
+.current-campaign div {
+    position: absolute;
+    bottom: 6%;
+    left: 14%;
+}
+.current-campaign div a {
+    display: inline-block;
+    margin: 5px;
+    border: 2px solid darkgrey;
+    padding: 8px 5px 1px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.current-campaign div a img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* SHIP (LEFT) SLIDE (some of the classes reused from the campaign slide) */
+.ship {
+    background-image: url("../img/1_header/standard_leftBG.png");
+    position: relative;
+}
+.ship-txt {
+    position: absolute;
+    right: 14%;
+    bottom: 13%;
+    text-align: right;
+    color: white;
+    max-width: 35%;
+}
+
+/* VIDEO VANYA SLIDE (some of the classes reused from the campaign slide)*/
+.vanya {
+    position: relative;
+} 
+#my-player {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.vanya-txt {
+    position: absolute;
+    z-index: 1;
+    left: 14%;
+    top: 40%;
+    text-align: left;
+    color: white;
+    max-width: 19%;
+}
+
+/* BRINGING HOPE (RIGHT) SLIDE */
+.bringing-hope {
+    background-image: url("../img/1_header/standard_rightBG.png");
+    position: relative;
+}
+.hope-txt {
+    position: absolute;
+    left: 14%;
+    bottom: 17%;
+    text-align: left;
+    color: white;
+    max-width: 70%;
+}
+
+/* SLICK CUSTOMIZATION */
+.slick-dots
+{ 
+    bottom: 30px;
+}
+.slick-dots li.slick-active button:before {
+    color: white;
+}
+.slick-dots li button:before
+{
+    font-size: 12px;
+    color: white;
+}
+
+
+
+/* WHAT IS IT SECTION */
+.what-is {
+    padding: 200px 14%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 100px;
+}
+.what-is-txt-btn {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.what-img {
+    border-radius: 5%;
+}
+.what-is-txt-btn p {
+    font-size: 23px;
+    font-family: "Roboto";
+    color: rgb(51, 51, 51);
+    line-height: 1.793;
+    text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.what-is-txt-btn a {
+    font-size: 15px;
+    font-family: "Roboto";
+    line-height: 1.056;
+    text-decoration: none;
+    color: rgb(125, 183, 51);
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.2;
+    display: inline-block;
+    border: 3px solid rgb(125, 183, 51);
+    border-radius: 5px;
+    padding: 17px 32px;
+    margin-top: 40px;
+    float: left;
+}
+
+/* STORIES SECTION */
+.stories h1 {
+    font-size: 50px;
+    font-family: "RobotoSlab";
+    color: rgb(1, 191, 253);
+    line-height: 0.38;
+    text-align: left;
+    padding-left: 14%;
+    padding-bottom: 30px;
+}
+.stories-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0;
+}
+
+/* JOIN BANNER */
+.join-banner {
+    background-color: rgb(125, 183, 51);
+    height: 120px;
+}
+.join-banner p {
+    display: inline-block;
+    font-size: 35px;
+    font-family: "RobotoSlab";
+    line-height: 0.303;
+    color: white;
+    margin-left: 14%;
+    float: left;
+    margin-top: 56px;
+}
+.join-banner a {
+    display: inline-block;
+    font-size: 15px;
+    font-family: "Roboto";
+    line-height: 1.056;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.2;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 17px 32px;
+    margin-right: 14%;
+    margin-top: 32px;
+    float: right;
+}
+
+/* CLEARFIX */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*  DONATE 2 SECTION */
+.dono2 {
+    height: 750px;
+    background-image: url(/img/4_donate/donateBG_1.png);
+    position: relative;
+
+}
+.dono2 h1 {
+    color: white;
+    font-size: 50px;
+    font-family: "RobotoSlab";
+    top: 20%;
+    position: absolute;
+    left: 38%;
+}
+
+/* AFM section */
+.afm {
+    margin-top: 150px;
+    position: relative;
+    height: 800px;
+}
+.afm img {
+    float: right;
+    position: absolute;
+    right: 10%;   
+}
+.afm-txt-btn {
+    width: 40%;
+    position: absolute;
+    left: 14%;
+    top: 350px;
+}
+.afm-txt-btn p {
+    font-size: 22px;
+    font-family: "Roboto";
+    color: rgb(51, 51, 51);
+    line-height: 1.591;
+    text-align: left;
+}
+.afm-txt-btn h1 {
+    font-size: 21.639px;
+    font-family: "RobotoSlab";
+    color: rgb(1, 191, 253);
+    line-height: 1.122;
+    text-align: left;
+}
+.afm-txt-btn a {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(1, 191, 253);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    text-decoration: none;
+    border: 3px solid rgb(1, 191, 253);
+    border-radius: 5px;
+    padding: 17px 32px;
+    position: absolute;
+    left: 0;
+}
+
+/* METRICS section */
+.metrics {
+    margin-top: 150px;
+    position: relative;
+}
+.metrics-sub {
+    display: inline-block;
+    display: absolute;
+    width: 18%;
+}
+.metrics-sub h2 {
+    font-size: 60px;
+    font-family: "RobotoSlab";
+    color: rgb(102, 102, 102);
+    line-height: 0.284;
+}
+.metrics-sub p {
+    font-size: 28px;
+    font-family: "Roboto";
+    color: rgb(1, 191, 253);
+    line-height: 1.25;
+}
+.metrics-sub a {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.2;
+    display: inline-block;
+    border: 3px solid rgb(1, 191, 253);
+    border-radius: 5px;
+    padding: 17px 32px;
+}
+.metrics-left {
+   position: absolute;
+   left: 14%;
+}
+.metrics-right {
+    position: absolute;
+    right: 14%;
+}
+
+
+/* BECOME A VOLONTEER section */
+.become {
+    background-image: url("/img/6_how-to-become-meet-volunteers/how_to_becomeBG.png");
+    background-repeat: no-repeat;
+    height: 950px;
+    margin-top: 200px;
+    position: relative;
+}
+.become-txt {
+    position: absolute;
+    width: 28%;
+    right: 14%;
+    bottom: 25%;
+}
+.become-txt h1 {
+    font-size: 64px;
+    font-family: "RobotoSlab";
+    color: white;
+    line-height: 0.938;
+    text-align: center;        
+}
+.become-txt p {
+    font-size: 22px;
+    font-family: "Roboto";
+    color: white;
+    line-height: 1.591;
+    text-align: center;
+}
+.become-txt a {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.2;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 17px 32px;    
+}
+
+
+.vol123 {
+    position: relative;
+}
+.vol {
+    display: inline-block;
+    display: absolute;
+    width: 18%;
+    font-size: 30px;
+    font-family: "Roboto";
+    color: rgb(51, 51, 51);
+    line-height: 1.167;
+    text-align: center;
+}
+.vol-left {
+    position: absolute;
+    left: 17%;
+}
+.vol-right {
+    position: absolute;
+    right: 17%;
+}
+
+/* LAST ARTICLES section */
+.last-article {
+    background-color: lightgray;
+}
+
+/* styles */
+.last-article h1 {
+    font-size: 55px;
+    font-family: "RobotoSlab";
+    color: rgb(1, 191, 253);
+    line-height: 1.122;
+    text-align: left;
+    padding-left: 14%;
+    padding-top: 5%;
+}
+.date {
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: bold;
+    color: rgb(32, 32, 90);
+    font-weight: bold;
+    line-height: 1.75;
+}
+.indi h2 {
+    font-size: 35px;
+    font-family: "RobotoSlab";
+    line-height: 1.122;
+}
+.indi p {
+    font-size: 25px;
+    line-height: 1.122;
+}
+.indi a {
+    font-size: 25px;
+    text-weight: bold;
+    line-height: 1.122;
+    color: rgb(1, 191, 253);
+    text-decoration: none;
+}
+.signed {
+    font-size: 20px;
+    font-family: "Roboto";
+    color: rgb(51, 51, 51);
+    line-height: 0.757;
+}
+
+
